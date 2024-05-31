@@ -1,0 +1,126 @@
+.cloud {
+    border-radius: 50%;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    left: 85%;
+    top: -35vh;
+    height: 275px;
+}
+
+.cloud__1 {
+    width: 500px;
+    animation-name: cloud-movement-1;
+    animation-duration: 10s;
+}
+  
+.cloud__2 {
+    width: 700px;
+    animation-name: cloud-movement-2;
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+
+.cloud__3 {
+    width: 1000px;
+    animation-name: cloud-movement-3;
+    animation-duration: 15s;
+    animation-delay: 2s;
+}
+
+.cloud__4 {
+    width: 490px;
+    animation-name: cloud-movement-4;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.cloud__back__1 {
+    filter: url(#filter-back-1);
+    box-shadow: 300px 300px 30px -20px rgba(255, 255, 255, 1);
+}
+
+.cloud__mid__1 {
+    filter: url(#filter-mid-1);
+    box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
+}
+
+.cloud__front__1 {
+    filter: url(#filter-front-1);
+    box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
+}
+
+.cloud__back__2 {
+    filter: url(#filter-back-2);
+    box-shadow: 1000px 200px 30px -20px rgba(255, 255, 255, 1);
+}
+
+.cloud__mid__2 {
+    filter: url(#filter-mid-2);
+    box-shadow: 1000px 240px 70px -60px rgba(158, 168, 179, 0.5);
+}
+
+.cloud__front__2 {
+    filter: url(#filter-front-2);
+    box-shadow: 1000px 270px 60px -100px rgba(0, 0, 0, 0.3);
+}
+
+.cloud__back__3 {
+    filter: url(#filter-back-3);
+    box-shadow: 1300px 400px 30px -20px rgba(255, 255, 255, 1);
+}
+
+.cloud__mid__3 {
+    filter: url(#filter-mid-3);
+    box-shadow: 1300px 440px 70px -60px rgba(158, 168, 179, 0.5);
+}
+
+.cloud__front__3 {
+    filter: url(#filter-front-3);
+    box-shadow: 1300px 470px 60px -100px rgba(0, 0, 0, 0.3);
+}
+
+.cloud__back__4 {
+    filter: url(#filter-back-4);
+    box-shadow: 760px 420px 30px -20px rgba(255, 255, 255, 1);
+}
+
+.cloud__mid__4 {
+    filter: url(#filter-mid-4);
+    box-shadow: 760px 460px 70px -60px rgba(158, 168, 179, 0.5);
+}
+
+.cloud__front__4 {
+    filter: url(#filter-front-4);
+    box-shadow: 760px 490px 60px -100px rgba(0, 0, 0, 0.3);
+}
+
+.sun{
+    position: relative;
+    width: 20%;
+    height: 50%;
+    top: 80%;
+    left: 40%;
+    border-radius: 50%;
+    background-color: rgba(255,220,112,1);
+}
+
+@keyframes cloud-movement-1 {
+    0%   {left:85%;}
+    100% {left:-60%;}
+}
+
+@keyframes cloud-movement-2 {
+    0%   {left:35%;}
+    100% {left:-110%;}
+}
+
+@keyframes cloud-movement-3 {
+    0%   {left:25%;}
+    100% {left:-150%;}
+}
+
+@keyframes cloud-movement-4 {
+    0%   {left:55%;}
+    100% {left:-80%;}
+}

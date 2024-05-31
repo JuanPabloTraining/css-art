@@ -1,0 +1,93 @@
+.waves {
+    position: fixed;
+    width: 120%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -1;
+    transform: rotate3d(1, 0, 0, 80deg);
+    transform-origin: top center;
+
+    animation-name: sea-motion;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.wave {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    border-style: none none solid none;
+    border-width: 10px;
+    border-color: black;
+    margin-bottom: 50%;
+}
+
+.wave__left, .wave__right {
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.wave__left {
+    animation-name: wave-motion_left;
+    
+}
+
+.wave__right {
+    animation-name: wave-motion_right;
+}
+
+@keyframes sea-motion {
+    0%   {
+        left: -10%;
+        top: 40%;
+    }
+    100% {
+        left: -4%;
+        top: 57%;
+    }
+}
+
+@keyframes wave-motion_left {
+    0%   {
+        top: 10%;
+    }
+    25%   {
+        top: 500%;
+        transform: rotate(15deg);
+    }
+    50%   {
+        top: 500%;
+        transform: rotate(0deg);
+    }
+    75%   {
+        top: 500%;
+        transform: rotate(-15deg);
+    }
+    100% {
+        top: 10%;
+    }
+}
+
+@keyframes wave-motion_right {
+    0%   {
+        top: 10%;
+    }
+    25%   {
+        top: 500%;
+        transform: rotate(-15deg);
+    }
+    50%   {
+        top: 500%;
+        transform: rotate(0deg);
+    }
+    75%   {
+        top: 500%;
+        transform: rotate(15deg);
+    }
+    100% {
+        top: 10%;
+    }
+}
